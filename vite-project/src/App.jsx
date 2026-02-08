@@ -77,17 +77,28 @@ function App() {
       )}
       {mode === "play" && (
         <>
-          <h1 className="mb-5 text-white">Round one</h1>
+          <h1 className="p-4 mb-5 text-white">Round one</h1>
           <div className="game">
-            <div className="bart">
-              <h2>❤️❤️❤️</h2>
-              <img src="/Images/Homer.png" alt="Homer" />
-
-
-              <p>{name}</p>
+            <div className="bart mb-3">
+              <h2 className="fs-1 mb-5 sh shadow border-rounded">❤️❤️❤️</h2>
+              <img src="/Images/realDomer.png" className="bart-img img-fluid mb-3" />
+              <h3 className='fs-1'>{name}</h3>
+            </div>
+            <div className="vs">
+              <img src="/Images/vs.png.png" className="img-fluid p-5" />
+            </div>
+            <div className="homer mb-3">
+              <h2 className="fs-1 mb-5  shadow border-rounded">❤️❤️❤️</h2>
+              <img src="/Images/Homer.png" className="domer-img mb-3 img-fluid" />
+              <h3 className='fs-1'>bad guy</h3>
             </div>
           </div>
-        </>
+          <div className="options d-flex justify-content-center gap-5">
+            <Button text="🪨" className="option">🪨</Button>
+            <Button text="📄" className="option">📄</Button>
+            <Button text="✂️" className="option">✂️</Button>
+          </div>
+        </> 
       )}
       </div>
     </>

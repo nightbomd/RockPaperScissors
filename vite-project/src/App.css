@@ -15,9 +15,44 @@
   /* just in case */
   padding: 0;
   position: fixed;
-top: 0;
-left: 0;
+  top: 0;
+  left: 0;
 
+}
+
+.game {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-top: 4rem;
+
+}
+
+.bart-img,
+.domer-img {
+  width: 200px;
+  height: 200px;
+  aspect-ratio: 89/119;
+  transform: rotate3d(-180deg, 0, 0, 1);
+}
+
+
+.options .option {
+  cursor: pointer;
+  transition: 0.15s;
+  font-size: 5vw;
+
+  animation: bounce-reverse 0.5s ease-in-out forwards;
+
+}
+
+.options .option:hover {
+
+  border: 10px solid rgb(75, 110, 223);
+  border-radius: 3rem;
+  animation: bounce 0.5s ease-in-out forwards;
 }
 
 .btn.play {
@@ -36,4 +71,29 @@ left: 0;
   background-color: #4557bc;
   color: white;
   box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.5);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50%,
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes bounce-reverse {
+  0% {
+    transform: translateY(-30px);
+  }
+
+  50% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
