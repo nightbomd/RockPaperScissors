@@ -259,19 +259,19 @@ function App() {
                 <h2 className="fs-1 mb-5 sh shadow border-rounded">
                   {"❤️".repeat(lives.player)}
                 </h2>
-                <img onClick={() => playSound(domerSound)} src="/Images/realDomer.png"  className={`bart-img img-fluid mb-3 ${playerDamage ? "damage" : ""}`} />
+                <img onClick={() => playSound(domerSound)} src="vite-project/Images/realDomer.png"  className={`bart-img img-fluid mb-3 ${playerDamage ? "damage" : ""}`} />
                 <h3 className='fs-1'>{name}</h3>
               </div>
 
               <div className="vs">
-                <img src="/Images/vs.png.png" className="img-fluid p-5" />
+                <img src="vite-project/Images/vs.png.png" className="img-fluid p-5" />
               </div>
 
               <div className="homer mb-3">
                 <h2 className="fs-1 mb-5 shadow border-rounded">
                   {"❤️".repeat(lives.computer)}
                 </h2>
-                <img src="/Images/Homer.png"  className={`domer-img img-fluid mb-3 ${computerDamage ? "damage" : ""}`} />
+                <img src="vite-project/Images/Homer.png"  className={`domer-img img-fluid mb-3 ${computerDamage ? "damage" : ""}`} />
                 <h3 className='fs-1'>bad guy</h3>
               </div>
             </div>

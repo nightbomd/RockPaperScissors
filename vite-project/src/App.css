@@ -98,7 +98,7 @@
     transform: translateY(-30px);
   }
 }
-/* a comment */
+
 @keyframes bounce-reverse {
   0% {
     transform: translateY(-30px);
