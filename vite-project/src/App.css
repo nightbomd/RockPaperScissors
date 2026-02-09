@@ -26,10 +26,24 @@
   display: flex;
   justify-content: space-between;
   color: white;
-  margin-top: 2rem;
+
 
 }
+@keyframes damageFlash {
+  0% {
+    filter: none;
+  }
+  30% {
+    filter: sepia(1) saturate(1000%) hue-rotate(-50deg) brightness(1.2);
+  }
+  100% {
+    filter: none;
+  }
+}
 
+.damage {
+  animation: damageFlash 0.3s ease-in-out;
+}
 .bart-img,
 .domer-img {
   width: 200px;
