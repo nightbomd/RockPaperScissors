@@ -26,7 +26,7 @@
   display: flex;
   justify-content: space-between;
   color: white;
-  margin-top: 4rem;
+  margin-top: 2rem;
 
 }
 
@@ -36,6 +36,7 @@
   height: 200px;
   aspect-ratio: 89/119;
   transform: rotate3d(-180deg, 0, 0, 1);
+  cursor: pointer;
 }
 
 
