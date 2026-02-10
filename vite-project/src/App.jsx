@@ -177,10 +177,10 @@ function App() {
 
   return (
     <>
-      <audio ref={clickSound} src="/soundEffects/btn-sfx.mp3" preload="auto" />
-      <audio ref={mapSound} src="/soundEffects/bass.mp3" preload="auto" />
-      <audio ref={hoverSound} src="/soundEffects/Click.wav" preload="auto" />
-      <audio ref={domerSound} src="/soundEffects/domer.mp3" preload="auto" />
+      <audio ref={clickSound} src="/RockPaperScissors/soundEffects/btn-sfx.mp3" preload="auto" />
+      <audio ref={mapSound} src="/RockPaperScissors/soundEffects/bass.mp3" preload="auto" />
+      <audio ref={hoverSound} src="/RockPaperScissors/soundEffects/Click.wav" preload="auto" />
+      <audio ref={domerSound} src="/RockPaperScissors/soundEffects/domer.mp3" preload="auto" />
 
       <div className={mode === "play" ? "play-gradient" : ""}>
         {mode === "start" && (
@@ -246,9 +246,9 @@ function App() {
 
         {mode === "play" && (
           <>
-            <audio ref={winSound} src="/soundEffects/win.mp3" preload="auto" />
-            <audio ref={ouchSound} src="/soundEffects/ouch.mp3" preload="auto" />
-            <audio ref={loseSound} src="/soundEffects/lose.mp3" preload="auto" />
+            <audio ref={winSound} src="/RockPaperScissors/soundEffects/win.mp3" preload="auto" />
+            <audio ref={ouchSound} src="/RockPaperScissors/soundEffects/ouch.mp3" preload="auto" />
+            <audio ref={loseSound} src="/RockPaperScissors/soundEffects/lose.mp3" preload="auto" />
             <h1 className="p-2 mb-5 text-white">Round {round}</h1>
             {isSuddenDeath() && <h2 className="text-warning">SUDDEN DEATH!</h2>}
             <h2 className="game-logs text-white">{gameLog}</h2>
