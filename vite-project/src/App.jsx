@@ -49,6 +49,7 @@ function App() {
   const [gameLog, setGameLog] = useState("")
   const [playerDamage, setPlayerDamage] = useState(false);
   const [computerDamage, setComputerDamage] = useState(false);
+  
 
   const hoverSound = useRef(null)
   const mapSound = useRef(null)
@@ -139,13 +140,15 @@ function App() {
       setLives({ ...lives, computer: newComputerLives })
 
       if (newComputerLives === 0) {
+        let msg = ["Nice!", "Great job!", "You're on fire!", "Homer's crying!", "Domer's laughing!", "Wow, you really showed him!"]
         setGameOver(true)
         setWinner("player")
-        setGameLog(` ${round}: YOU WIN!!!`)
+        setGameLog(` ${round}:  ${msg[Math.floor(Math.random() * msg.length)]}`)
         playSound(winSound)
       }
     } else if (result === "lose") {
-      setGameLog(` ${round}: You lose the round!`)
+      let msg = ["Bad choice!", "Oof, tough break!", "Better luck next time!", "Homer's laughing at you!", "Domer's smirking!", "Yikes, that's gotta hurt!"]
+      setGameLog(` ${round}: ${msg[Math.floor(Math.random() * msg.length)]}`)
       takePlayerDamage()
       const newPlayerLives = lives.player - 1
       setLives({ ...lives, player: newPlayerLives })
